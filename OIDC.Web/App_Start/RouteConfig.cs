@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace WebApplication1
+namespace OIDC.Web
 {
     public class RouteConfig
     {

@@ -2,12 +2,13 @@
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
+using OIDC.Web;
 using Okta.AspNet;
 using Owin;
 
-[assembly: OwinStartup(typeof(WebApplication1.Startup))]
+[assembly: OwinStartup(typeof(Startup))]
 
-namespace WebApplication1
+namespace OIDC.Web
 {
     public class Startup
     {
@@ -21,8 +22,8 @@ namespace WebApplication1
             {
                 OktaDomain = "https://dev-376017.okta.com",
                 AuthorizationServerId = "aus1n7nfubeHAG5GG357",
-                ClientId = "0oa1n752ktbFdxXMw357",
-                ClientSecret = "7Wz4jdh2Ap38jhCKbTMYtXrt9FcgHsBHDYPby3or",
+                ClientId = "0oa1wbf6kb1fhpp1D357",
+                ClientSecret = "G4as-yX3nbfTa8ruA1O8mk0R4WMZTuqD3J-gvPw8",
                 RedirectUri = "https://localhost:44344/authorization-code/callback",
                 PostLogoutRedirectUri = "https://localhost:44344/account/logout",
                 Scope = new List<string> { "openid", "profile", "email" }

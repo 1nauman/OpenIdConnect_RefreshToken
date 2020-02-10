@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using Okta.AspNet;
 
-namespace WebApplication1.Controllers
+namespace OIDC.Web.Controllers
 {
     public class AccountController : Controller
     {
